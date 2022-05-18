@@ -2,7 +2,7 @@ const engineer = require('../lib/engineer')
 
 describe('Engineer class test',()=>{
 	describe('Initialization', () =>{
-		it('should return an employee object containing name, id, email, github properties when called with "new" keyword',() => {
+		it('should return an engineer object containing name, id, email, github properties when called with "new" keyword',() => {
 			const obj = new engineer()
 
 			expect("name" in obj).toEqual(true)
