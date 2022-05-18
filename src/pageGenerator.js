@@ -57,7 +57,7 @@ function generatePage(employeeList){
 </body>
 </html>
 	`
-	console.log(resultData)
+	
 	return resultData
 
 }
