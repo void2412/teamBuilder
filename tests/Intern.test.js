@@ -35,6 +35,7 @@ describe('Intern class test', () => {
 			expect(obj.getName()).toEqual('as')
 			expect(obj.getId()).toEqual(3)
 			expect(obj.getEmail()).toEqual('xv')
+			expect(obj.getSchool()).toEqual('adelaide')
 			expect(obj.getRole()).toEqual('Intern')
 		})
 	})
