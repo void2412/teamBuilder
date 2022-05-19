@@ -136,6 +136,10 @@ async function init(){
 	var filename = await getHTMLfileName()
 	var data = generatePage(employeeList)
 
+	if (!fs.existsSync('./dist')){
+		fs.mkdirSync('./dist')
+	}
+
 	fs.writeFile(`./dist/${filename}`, data, err => err ? console.error(err) : console.log('Successfully created html'))
 }
 
